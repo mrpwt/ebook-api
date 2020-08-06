@@ -16,6 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/me', function () {
-    return ['NIS'=>'3103118106','Nama'=>'Rafif','Gender'=>'Laki-Laki','Phone'=>'085399476020','Kelas' => 'XIIRPL 3'];
-});
+Route::get('/me', 'AuthController@index');
